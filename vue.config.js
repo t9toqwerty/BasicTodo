@@ -8,8 +8,11 @@ module.exports = {
     override: {
       template: 'public/browser-extension.html',
       entry: './src/override/main.js',
-      title: 'Override'
+      title: 'Tasks'
     }
+  },
+  configureWebpack: {
+    devtool: 'cheap-module-source-map'
   },
   pluginOptions: {
     browserExtension: {
